@@ -7,16 +7,10 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <nav class="uk-navbar-container" uk-navbar>
-      <div class="uk-navbar-left">
-          <div class="uk-navbar-item">
-              <form action="#" class="uk-search uk-search-navbar" onsubmit="search(); return false;">
-                  <span uk-search-icon></span>
-                  <input id="omnibox" class="uk-search-input" type="text" placeholder="Search..." onsubmit="search()">
-              </form>
+          <div>
+                  <input id="omnibox" type="text" placeholder="Search...">
+                  <button onclick="search()">Search</button>
           </div>
-      </div>
-  </nav>
 
 
 <webview id="mainFrame"
