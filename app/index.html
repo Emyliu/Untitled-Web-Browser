@@ -10,10 +10,9 @@
     <nav class="uk-navbar-container" uk-navbar>
       <div class="uk-navbar-left">
           <div class="uk-navbar-item">
-              <form class="uk-search uk-search-navbar" onsubmit="search()">
+              <form action="#" class="uk-search uk-search-navbar" onsubmit="search(); return false;">
                   <span uk-search-icon></span>
-                  <input class="uk-search-input" type="text" placeholder="Search...">
-                  <input type="submit">
+                  <input id="omnibox" class="uk-search-input" type="text" placeholder="Search..." onsubmit="search()">
               </form>
           </div>
       </div>
