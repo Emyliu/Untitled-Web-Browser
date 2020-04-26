@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./css/uikit.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+          <div class="uk-navbar-item">
+              <form class="uk-search uk-search-navbar" onsubmit="search()">
+                  <span uk-search-icon></span>
+                  <input class="uk-search-input" type="text" placeholder="Search...">
+                  <input type="submit">
+              </form>
+          </div>
+      </div>
+  </nav>
+
+
+<webview id="mainFrame"
+    style="width:100%; height:100vh"
+    src="https://www.youtube.com">
+</webview>
+
+
+
+  </body>
+</html>
