@@ -11,3 +11,10 @@ This is a personal project, where I try to replicate most of the important featu
 ## Things that will be implemented in the next few days
 - Page Refresh
 - Forward and Back
+
+## Other things that will be implemented
+- Favorites
+- Preferences
+- Tabbing
+- General UI overhaul
+- Naming this project
