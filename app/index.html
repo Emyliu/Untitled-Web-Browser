@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" type="text/css" href="./css/uikit.css">
-    <script src="index.js"></script>
+    <script src="searchbox.js"></script>
   </head>
   <body>
-          <div>
-                  <input id="omnibox" type="text" placeholder="Search...">
-                  <button onclick="search()">Search</button>
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+          <div class="uk-navbar-item">
+              <form class="uk-search uk-search-navbar" onsubmit="search(); return false;">
+                  <span uk-search-icon></span>
+                  <input id="omnibox" class="uk-search-input" type="text" placeholder="Search..." onsubmit="search()">
+              </form>
           </div>
+      </div>
+  </nav>
 
 
 <webview id="mainFrame"
