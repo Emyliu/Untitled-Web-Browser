@@ -1,4 +1,4 @@
-
+const {ipcRenderer, remote} = require("electron")
 
 function search() {
     let url = document.getElementById("omnibox").value;
@@ -37,3 +37,11 @@ function generateSearchLink(term) {
     return "https://www.google.com/search?q=" + term
     // This will break, but fix later I guess.
 }
+
+function ipcCall() {
+    ipcRenderer.send("inc")
+}
+
+ipcRenderer.on("inc-reply", (event, arg) => {
+    document.getElementById("ipcTest").innerHTML = arg
+})
