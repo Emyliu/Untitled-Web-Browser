@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" type="text/css" href="./css/uikit.css">
-    <script src="searchbox.js"></script>
+    <script src="omnibox.js"></script>
+    <script src="nav.js"></script>
   </head>
   <body>
     <nav class="uk-navbar-container" uk-navbar>
@@ -19,6 +20,7 @@
   </nav>
 
   <button id="ipcTest" onclick="ipcCall()">ipcTest</button>
+  <button id="refresh" onclick="refreshPage()">Refresh</button>
 
 
 <webview id="mainFrame"
