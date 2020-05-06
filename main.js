@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
+var redisTools = require('./db')
 
 function createWindow () {
   // Create the browser window.
@@ -49,3 +50,5 @@ ipcMain.on("inc", (event) => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+redisTools.redisMain();

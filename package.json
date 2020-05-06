@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Emyliu/Untitled-Web-Browser#readme",
   "devDependencies": {
     "electron": "^8.2.3"
+  },
+  "dependencies": {
+    "redis": "^3.0.2"
   }
 }
