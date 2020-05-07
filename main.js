@@ -42,6 +42,7 @@ app.on('activate', () => {
 
 var counter = 0;
 
+
 ipcMain.on("inc", (event) => {
   counter = counter + 1;
   console.log(counter)
